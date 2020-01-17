@@ -10,7 +10,7 @@ def run_stuff():
     """
     print("This is `run()` from ", __file__)
 
-    x = np.random.rand(10)
+    x = np.random.rand(10).tolist()
     print("Unsorted input: ", x)
 
     print("Bubble sort output: ", bubblesort(x))
