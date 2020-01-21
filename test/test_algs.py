@@ -20,13 +20,32 @@ def test_bubblesort():
     # think about: (1) does your code handle 0-element arrays without
     # failing, (2) does your code handle characters?
 
+    # reverse ordered list
+    s = [11,10,9]
+
+    # ordered list
+    t = [9,10,11]
+
+    # negative numbers
     u = [-1, -100, -30, -50, 20, 50, 61]
+
+    # unordered list
     v = [1, 2, 8, 3]
+
+    # one element list
     w = [5]
+
+    # characters
     x = ['a', 'c', 'b']
+
+    # duplicates
     y = [1, 2, 3, 8, 2]
+
+    # empty array
     z = []
 
+    assert np.array_equal(algs.bubblesort(s), np.array([9,10,11]))
+    assert np.array_equal(algs.bubblesort(t), np.array([9,10,11]))
     assert np.array_equal(algs.bubblesort(u), np.array([-100,-50,-30,-1,20,50,61]))
     assert np.array_equal(algs.bubblesort(v), np.array([1,2,3,8]))
     assert np.array_equal(algs.bubblesort(w), np.array([5]))
@@ -37,29 +56,66 @@ def test_bubblesort():
     print("Bubble sort output: ", algs.bubblesort(x))
 
 def test_quicksort():
+    # reverse ordered list
+    s = [11,10,9]
+
+    # ordered list
+    t = [9,10,11]
+
+    # negative numbers
     u = [-1, -100, -30, -50, 20, 50, 61]
+
+    # unordered list
     v = [1, 2, 8, 3]
+
+    # one element list
     w = [5]
-    x = ['bulbasaur', 'evee', 'pikachu', 'zappados', 'growlithe', 'richu']
+
+    # characters
+    x = ['a', 'c', 'b']
+
+    # duplicates
     y = [1, 2, 3, 8, 2]
+
+    # empty array
     z = []
 
+    assert np.array_equal(algs.bubblesort(s), np.array([9,10,11]))
+    assert np.array_equal(algs.bubblesort(t), np.array([9,10,11]))
     assert np.array_equal(algs.bubblesort(u), np.array([-100,-50,-30,-1,20,50,61]))
     assert np.array_equal(algs.quicksort(v), np.array([1,2,3,8]))
     assert np.array_equal(algs.quicksort(w), np.array([5]))
-    # need to figure out why this test isn't working
-    assert np.array_equal(algs.quicksort(x), np.array(['bulbasaur', 'evee', 'growlithe', 'pikachu', 'richu', 'zappados']))
+    assert np.array_equal(algs.quicksort(x), np.array(['a', 'b', 'c']))
     assert np.array_equal(algs.quicksort(y), np.array([1,2,2,3,8]))
     assert np.array_equal(algs.quicksort(z), np.array([]))
 
 def test_insertionsort():
+    # reverse ordered list
+    s = [11,10,9]
+
+    # ordered list
+    t = [9,10,11]
+
+    # negative numbers
     u = [-1, -100, -30, -50, 20, 50, 61]
+
+    # unordered list
     v = [1, 2, 8, 3]
+
+    # one element list
     w = [5]
+
+    # characters
     x = ['a', 'c', 'b']
+
+    # duplicates
     y = [1, 2, 3, 8, 2]
+
+    # empty array
     z = []
 
+    assert np.array_equal(algs.bubblesort(s), np.array([9,10,11]))
+    assert np.array_equal(algs.bubblesort(t), np.array([9,10,11]))
     assert np.array_equal(algs.bubblesort(u), np.array([-100,-50,-30,-1,20,50,61]))
     assert np.array_equal(algs.bubblesort(v), np.array([1,2,3,8]))
     assert np.array_equal(algs.bubblesort(w), np.array([5]))
