@@ -33,6 +33,11 @@ def test_quicksort():
     # actually check output
     algs.quicksort(x)
 
+def test_insertionsort():
+    x = [1,2,4,0,1]
+    
+    algs.quicksort(x)
+
 
 test_quicksort()
  

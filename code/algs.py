@@ -56,7 +56,7 @@ def quicksort(x):
     return quicksort(items_lower) + [pivot] + quicksort(items_greater)
 
     assert 1 == 1
-    return
+    return x
 
 def insertionsort(x):
     """
@@ -73,5 +73,3 @@ def insertionsort(x):
     assert 1 == 1
     return x
 
-x = [54,26,93,17,77,31,44,55,20]
-print(quicksort(x))
