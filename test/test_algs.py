@@ -20,24 +20,54 @@ def test_bubblesort():
     # think about: (1) does your code handle 0-element arrays without
     # failing, (2) does your code handle characters?
 
-    x = np.array([1,2,4,0,1]).tolist()
-    
+    # x = np.array([1,2,4,0,1]).tolist()
+    v = [1, 2, 8, 3]
+    w = [5]
+    x = ['a', 'c', 'b']
+    y = [1, 2, 3, 8, 2]
+    z = []
     # for now, just attempt to call the bubblesort function, should
     # actually check output
-    algs.bubblesort(x)
+    # algs.bubblesort(x)
+    # algs.bubblesort(y)
+    # algs.bubblesort(z)
+    assert np.array_equal(algs.bubblesort(v), np.array([1,2,3,8]))
+    assert np.array_equal(algs.bubblesort(w), np.array([5]))
+    assert np.array_equal(algs.bubblesort(x), np.array(['a', 'b', 'c']))
+    assert np.array_equal(algs.bubblesort(y), np.array([1,2,2,3,8]))
+    assert np.array_equal(algs.bubblesort(z), np.array([]))
+
+    print("Bubble sort output: ", algs.bubblesort(x))
 
 def test_quicksort():
 
-    x = [1,2,4,0,1]
+    v = [1, 2, 8, 3]
+    w = [5]
+    x = ['zach', 'hannah', 'josh']
+    y = [1, 2, 3, 8, 2]
+    z = []
     # for now, just attempt to call the quicksort function, should
     # actually check output
     algs.quicksort(x)
 
+    assert np.array_equal(algs.quicksort(v), np.array([1,2,3,8]))
+    assert np.array_equal(algs.quicksort(w), np.array([5]))
+    # need to figure out why this test isn't working
+    assert np.array_equal(algs.quicksort(x), np.array(['hannah', 'josh', 'zach']))
+    assert np.array_equal(algs.quicksort(y), np.array([1,2,2,3,8]))
+    assert np.array_equal(algs.quicksort(z), np.array([]))
+
 def test_insertionsort():
-    x = [1,2,4,0,1]
-    
-    algs.quicksort(x)
+    v = [1, 2, 8, 3]
+    w = [5]
+    x = ['a', 'c', 'b']
+    y = [1, 2, 3, 8, 2]
+    z = []
+
+    assert np.array_equal(algs.bubblesort(v), np.array([1,2,3,8]))
+    assert np.array_equal(algs.bubblesort(w), np.array([5]))
+    assert np.array_equal(algs.bubblesort(x), np.array(['a', 'b', 'c']))
+    assert np.array_equal(algs.bubblesort(y), np.array([1,2,2,3,8]))
+    assert np.array_equal(algs.bubblesort(z), np.array([]))
 
 
-test_quicksort()
- 

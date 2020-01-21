@@ -73,3 +73,7 @@ def insertionsort(x):
     assert 1 == 1
     return x
 
+x = ['a', 'c' , 'b']
+
+print(quicksort(x))
+

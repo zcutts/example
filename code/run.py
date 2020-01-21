@@ -4,15 +4,21 @@
 import numpy as np
 from .algs import quicksort, bubblesort, insertionsort
 
+
 def run_stuff():
     """
     This function is called in `__main__.py`
     """
     print("This is `run()` from ", __file__)
 
-    x = np.random.rand(10).tolist()
+    # x = np.random.rand(10).tolist()
+    x = ['a', 'c', 'b']
     print("Unsorted input: ", x)
 
-    print("Bubble sort output: ", bubblesort(x))
+    # print("Bubble sort output: ", bubblesort(x))
     print("Quick sort output: ", quicksort(x))
-    print("Insertion sort output: ", insertionsort(x))
+    # print("Insertion sort output: ", insertionsort(x))
+
+
+    #test_pointless_sort()
+
