@@ -20,7 +20,7 @@ def test_bubblesort():
     # think about: (1) does your code handle 0-element arrays without
     # failing, (2) does your code handle characters?
 
-    x = np.array([1,2,4,0,1].tolist())
+    x = np.array([1,2,4,0,1]).tolist()
     
     # for now, just attempt to call the bubblesort function, should
     # actually check output
