@@ -15,8 +15,8 @@ def run_stuff():
     x = ['bulbasaur', 'evee', 'pikachu', 'zappados', 'growlithe', 'richu']
     print("Unsorted input: ", x)
 
-    # print("Bubble sort output: ", bubblesort(x))
-    print("Quick sort output: ", quicksort(x))
+    print("Bubble sort output: ", bubblesort(x))
+    # print("Quick sort output: ", quicksort(x))
     # print("Insertion sort output: ", insertionsort(x))
 
 

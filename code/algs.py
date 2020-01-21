@@ -26,7 +26,6 @@ def bubblesort(x):
         swap = True
         if swap == False:
             break
-    assert 1 == 1
     return x
 
 def quicksort(x):
@@ -54,9 +53,6 @@ def quicksort(x):
             items_lower.append(items)
 
     return quicksort(items_lower) + [pivot] + quicksort(items_greater)
-
-    assert 1 == 1
-    return x
 
 def insertionsort(x):
     """
