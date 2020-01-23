@@ -12,7 +12,8 @@ def run_stuff():
     print("This is `run()` from ", __file__)
 
     # x = np.random.rand(10).tolist()
-    x = ['bulbasaur', 'evee', 'pikachu', 'zappados', 'growlithe', 'richu']
+    # x = ['bulbasaur', 'evee', 'pikachu', 'zappados', 'growlithe', 'richu']
+    x = [9,10,11]
     print("Unsorted input: ", x)
 
     print("Bubble sort output: ", bubblesort(x))

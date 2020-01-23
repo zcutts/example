@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def pointless_sort(x):
     """
@@ -16,7 +17,7 @@ def bubblesort(x):
     If the first element is greater than the second element swap the elements
     I also keep tract of the swaps so if no swaps occur I know that sorting is done
     """
-    # equal sign
+    # equal sign, use assignment for complexity
     assignment = 0
 
     # ==, <, > is a conditional
@@ -44,6 +45,7 @@ def bubblesort(x):
             break
     return x, assignment, conditional
 
+
 def quicksort(x):
     """
     Describe how you are sorting `x`
@@ -53,17 +55,21 @@ def quicksort(x):
     One list greater than, and one list less than the pivot point
     recursively run this to sort the whole list
     """
+    assignment = 0
+    conditional = 0
+
     list_length = len(x)
     assignment += 1
 
     conditional += 1
     if list_length <= 1:
-        return x
+        return x, assignment, conditional
     else:
         pivot = x.pop()
 
     items_greater = []
     items_lower = []
+    assignment += 2
 
     for items in x:
 
@@ -73,32 +79,49 @@ def quicksort(x):
         else:
             items_lower.append(items)
 
-    return quicksort(items_lower) + [pivot] + quicksort(items_greater)
+    x1, assignment_1, conditional_1 = quicksort(items_lower)
+    x2, assignment_2, conditional_2 = quicksort(items_greater)
+    assignment += 2
+
+    return x1 + [pivot] + x2, assignment_1 + assignment_2, conditional_1 + conditional_2
 
 def insertionsort(x):
     """
     Describe how you are sorting 'x'
     """
+    assignment = 0
+    conditional = 0
+
     list_length = len(x)
+    assignment += 1
+
     for i in range(1,list_length):
         cur_value = x[i]
         pos = i
+        assignment += 3
+
+        conditional += 2
         while pos > 0 and x[pos-1] > cur_value:
             x[pos] = x[pos-1]
             pos = pos - 1
+            assignment +=2
+
         x[pos] = cur_value
-    assert 1 == 1
+        assignment += 1
+
     return x
 
-assignment_list = []
-conditional_list = []
-for i in range(10):
-    x = np.random.rand(i).tolist()
-    sorted_list, Assignment, Conditional = bubblesort(x)
-    assignment_list.append(Assignment)
-    conditional_list.append(Conditional)
+# assignment_list = []
+# conditional_list = []
+# x_label = []
+# for i in range(10):
+#     x = np.random.rand(i).tolist()
+#     sorted_list, Assignment, Conditional = quicksort(x)
+#     assignment_list.append(Assignment)
+#     conditional_list.append(Conditional)
+#     x_label.append(i)
 
-print(assignment_list)
+# print(assignment_list)
 
-
+# plt.plot(x_label, assignment_list)
 

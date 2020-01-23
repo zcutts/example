@@ -80,9 +80,9 @@ def test_quicksort():
     # empty array
     z = []
 
-    assert np.array_equal(algs.bubblesort(s), np.array([9,10,11]))
-    assert np.array_equal(algs.bubblesort(t), np.array([9,10,11]))
-    assert np.array_equal(algs.bubblesort(u), np.array([-100,-50,-30,-1,20,50,61]))
+    assert np.array_equal(algs.quicksort(s), np.array([9,10,11]))
+    assert np.array_equal(algs.quicksort(t), np.array([9,10,11]))
+    assert np.array_equal(algs.quicksort(u), np.array([-100,-50,-30,-1,20,50,61]))
     assert np.array_equal(algs.quicksort(v), np.array([1,2,3,8]))
     assert np.array_equal(algs.quicksort(w), np.array([5]))
     assert np.array_equal(algs.quicksort(x), np.array(['a', 'b', 'c']))
@@ -114,13 +114,13 @@ def test_insertionsort():
     # empty array
     z = []
 
-    assert np.array_equal(algs.bubblesort(s), np.array([9,10,11]))
-    assert np.array_equal(algs.bubblesort(t), np.array([9,10,11]))
-    assert np.array_equal(algs.bubblesort(u), np.array([-100,-50,-30,-1,20,50,61]))
-    assert np.array_equal(algs.bubblesort(v), np.array([1,2,3,8]))
-    assert np.array_equal(algs.bubblesort(w), np.array([5]))
-    assert np.array_equal(algs.bubblesort(x), np.array(['a', 'b', 'c']))
-    assert np.array_equal(algs.bubblesort(y), np.array([1,2,2,3,8]))
-    assert np.array_equal(algs.bubblesort(z), np.array([]))
+    assert np.array_equal(algs.insertionsort(s), np.array([9,10,11]))
+    assert np.array_equal(algs.insertionsort(t), np.array([9,10,11]))
+    assert np.array_equal(algs.insertionsort(u), np.array([-100,-50,-30,-1,20,50,61]))
+    assert np.array_equal(algs.insertionsort(v), np.array([1,2,3,8]))
+    assert np.array_equal(algs.insertionsort(w), np.array([5]))
+    assert np.array_equal(algs.insertionsort(x), np.array(['a', 'b', 'c']))
+    assert np.array_equal(algs.insertionsort(y), np.array([1,2,2,3,8]))
+    assert np.array_equal(algs.insertionsort(z), np.array([]))
 
 
