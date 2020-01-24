@@ -1,7 +1,8 @@
 # example
 
+
 [![Build
-Status](https://travis-ci.org/zcutts/example.svg?branch=master)](https://travis-ci.org/zcutts/example)
+Status](https://travis-ci.org/zcutts/hw_1.svg?branch=master)](https://travis-ci.org/zcutts/hw_1)
 
 Example python project with testing.
 
