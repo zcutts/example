@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 def pointless_sort(x):
     """
@@ -10,6 +9,8 @@ def pointless_sort(x):
 
 def bubblesort(x):
     """
+    input x takes in a list, output is a sorted list, numnber of assignments,
+    and number of conditionals
     Describe how you are sorting `x`
     Compare adjacent items in a list and swap if the items are not in order
     Take the length of the entire list
@@ -49,6 +50,8 @@ def bubblesort(x):
 def quicksort(x):
     """
     Describe how you are sorting `x`
+    input x takes in a list, output is a sorted list, numnber of assignments,
+    and number of conditionals
     choose a pivot point to compare all other values in the list
     using the pivot point as the last element in the list
     Use this pivot point to split the whole list into a two lists
@@ -87,7 +90,8 @@ def quicksort(x):
 
 def insertionsort(x):
     """
-    Describe how you are sorting 'x'
+    input x takes in a list, output is a sorted list, numnber of assignments,
+    and number of conditionals
     """
     assignment = 0
     conditional = 0
