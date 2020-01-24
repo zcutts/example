@@ -16,7 +16,7 @@ def run_stuff():
     x = [9,10,11]
     print("Unsorted input: ", x)
 
-    print("Bubble sort output: ", bubblesort(x))
+    print("Bubble sort output: ", bubblesort(x)[0])
     # print("Quick sort output: ", quicksort(x))
     # print("Insertion sort output: ", insertionsort(x))
 

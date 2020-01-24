@@ -109,7 +109,7 @@ def insertionsort(x):
         x[pos] = cur_value
         assignment += 1
 
-    return x
+    return x, assignment, conditional
 
 # assignment_list = []
 # conditional_list = []
